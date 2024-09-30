@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &786442552369102235
+--- !u!1001 &5501515973407905950
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -8,56 +8,56 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2167823850300119097, guid: 3ece0deb46df55a458f88fe9c426738b, type: 3}
+    - target: {fileID: 881894397021443700, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37cd10bb39593694f8f27eb36211eb0c, type: 2}
-    - target: {fileID: 4688911717335715362, guid: 3ece0deb46df55a458f88fe9c426738b, type: 3}
+    - target: {fileID: 1244052165767959752, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.457563
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4688911717335715362, guid: 3ece0deb46df55a458f88fe9c426738b, type: 3}
+    - target: {fileID: 1244052165767959752, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.42
+      value: 1.25
       objectReference: {fileID: 0}
-    - target: {fileID: 4688911717335715362, guid: 3ece0deb46df55a458f88fe9c426738b, type: 3}
+    - target: {fileID: 1244052165767959752, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.4614981
+      value: 5.43
       objectReference: {fileID: 0}
-    - target: {fileID: 4688911717335715362, guid: 3ece0deb46df55a458f88fe9c426738b, type: 3}
+    - target: {fileID: 1244052165767959752, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4688911717335715362, guid: 3ece0deb46df55a458f88fe9c426738b, type: 3}
+    - target: {fileID: 1244052165767959752, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4688911717335715362, guid: 3ece0deb46df55a458f88fe9c426738b, type: 3}
+    - target: {fileID: 1244052165767959752, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4688911717335715362, guid: 3ece0deb46df55a458f88fe9c426738b, type: 3}
+    - target: {fileID: 1244052165767959752, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4688911717335715362, guid: 3ece0deb46df55a458f88fe9c426738b, type: 3}
+    - target: {fileID: 1244052165767959752, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4688911717335715362, guid: 3ece0deb46df55a458f88fe9c426738b, type: 3}
+    - target: {fileID: 1244052165767959752, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4688911717335715362, guid: 3ece0deb46df55a458f88fe9c426738b, type: 3}
+    - target: {fileID: 1244052165767959752, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6640671265440469632, guid: 3ece0deb46df55a458f88fe9c426738b, type: 3}
+    - target: {fileID: 8468718578124042216, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
       propertyPath: m_Name
-      value: WhiteBall (1) Variant 7
+      value: Ball Variant 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3ece0deb46df55a458f88fe9c426738b, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
