@@ -9,16 +9,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 657056079615048949, guid: 8b4dc1e5d52589b48b5af29b97da7784, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 657056079615048949, guid: 8b4dc1e5d52589b48b5af29b97da7784, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 657056079615048949, guid: 8b4dc1e5d52589b48b5af29b97da7784, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 657056079615048949, guid: 8b4dc1e5d52589b48b5af29b97da7784, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 657056079615048949, guid: 8b4dc1e5d52589b48b5af29b97da7784, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.25
+      value: 1.2209926
       objectReference: {fileID: 0}
     - target: {fileID: 657056079615048949, guid: 8b4dc1e5d52589b48b5af29b97da7784, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.43
+      value: 3.34
       objectReference: {fileID: 0}
     - target: {fileID: 657056079615048949, guid: 8b4dc1e5d52589b48b5af29b97da7784, type: 3}
       propertyPath: m_LocalRotation.w
@@ -52,6 +64,26 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b0987ff01f46595489c7fec92723fd79, type: 2}
+    - target: {fileID: 2129568943125268384, guid: 8b4dc1e5d52589b48b5af29b97da7784, type: 3}
+      propertyPath: m_Constraints
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6289451608647721914, guid: 8b4dc1e5d52589b48b5af29b97da7784, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6289451608647721914, guid: 8b4dc1e5d52589b48b5af29b97da7784, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6289451608647721914, guid: 8b4dc1e5d52589b48b5af29b97da7784, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6289451608647721914, guid: 8b4dc1e5d52589b48b5af29b97da7784, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7916054304451266517, guid: 8b4dc1e5d52589b48b5af29b97da7784, type: 3}
       propertyPath: m_Name
       value: Ball Variant 3

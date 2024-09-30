@@ -13,16 +13,28 @@ PrefabInstance:
       value: Ball Variant 1
       objectReference: {fileID: 0}
     - target: {fileID: 7695162059032150576, guid: 8eba3836bee05e64697e341aaa11be09, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7695162059032150576, guid: 8eba3836bee05e64697e341aaa11be09, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7695162059032150576, guid: 8eba3836bee05e64697e341aaa11be09, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7695162059032150576, guid: 8eba3836bee05e64697e341aaa11be09, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.59
       objectReference: {fileID: 0}
     - target: {fileID: 7695162059032150576, guid: 8eba3836bee05e64697e341aaa11be09, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.25
+      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 7695162059032150576, guid: 8eba3836bee05e64697e341aaa11be09, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.43
+      value: 3.06
       objectReference: {fileID: 0}
     - target: {fileID: 7695162059032150576, guid: 8eba3836bee05e64697e341aaa11be09, type: 3}
       propertyPath: m_LocalRotation.w
@@ -56,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 96f49344a94aa8245b7780b299f17b2f, type: 2}
+    - target: {fileID: 9104413337347979621, guid: 8eba3836bee05e64697e341aaa11be09, type: 3}
+      propertyPath: m_Constraints
+      value: 80
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
