@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class DetectCollider : MonoBehaviour
 {
+    [SerializeField] Ball ballScript;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!HitBall.instance.moving &&  other.gameObject.CompareTag("Player"))
+        if (!ballScript.moving &&  other.gameObject.CompareTag("Player"))
         {
             HitBall.instance.playerInRange = true;
-            HitBall.instance.hitDirection = -transform.localPosition;
+            ballScript.direction = -transform.localPosition;
         }
     }
 

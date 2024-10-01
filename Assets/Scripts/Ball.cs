@@ -20,12 +20,23 @@ public class Ball : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Bumper") | collision.gameObject.CompareTag("Ball"))
+        if (collision.gameObject.CompareTag("Bumper"))
         {
             rb.velocity = Vector3.zero;
             transform.position = transform.position + (-direction * .05f);
             rb.isKinematic = true;
             moving = false;
+        }
+
+        if (collision.gameObject.CompareTag("Ball"))
+        {
+            rb.velocity = Vector3.zero;
+            transform.position = transform.position + (-direction * .05f);
+            rb.isKinematic = true;
+            moving = false;
+            Ball ballScript = collision.gameObject.GetComponent<Ball>();
+            ballScript.moving = true;
+            ballScript.direction = direction;
         }
     }
 }
