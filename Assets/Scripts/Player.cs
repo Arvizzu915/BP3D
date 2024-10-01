@@ -7,6 +7,10 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private float playerSpeed, jumpForce;
     [SerializeField] Rigidbody rb;
+    public bool katana;
+    public bool bazooka;
+    public int selectedWeapon =0;
+    [SerializeField] private GameObject kHb;
 
     Vector3 moveDirection;
 
@@ -31,4 +35,6 @@ public class Player : MonoBehaviour
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
     }
+
+    
 }
