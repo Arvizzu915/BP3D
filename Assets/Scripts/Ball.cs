@@ -18,6 +18,11 @@ public class Ball : MonoBehaviour
         }
     }
 
+    public void RoundPosition(float offset)
+    {
+        transform.position = new Vector3(Mathf.Round(transform.position.x + offset), 1.5f, Mathf.Round(transform.position.z + offset));
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Bumper"))
@@ -26,6 +31,7 @@ public class Ball : MonoBehaviour
             transform.position = transform.position + (-direction * .05f);
             rb.isKinematic = true;
             moving = false;
+            RoundPosition(0.3f);
         }
 
         if (collision.gameObject.CompareTag("Ball"))
@@ -37,6 +43,7 @@ public class Ball : MonoBehaviour
             Ball ballScript = collision.gameObject.GetComponent<Ball>();
             ballScript.moving = true;
             ballScript.direction = direction;
+            RoundPosition(0);
         }
     }
 }
