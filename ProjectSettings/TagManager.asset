@@ -8,6 +8,7 @@ TagManager:
   - Ball
   - Bumper
   - DirPad
+  - BallTriggerDetect
   layers:
   - Default
   - TransparentFX
