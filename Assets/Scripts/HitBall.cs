@@ -24,6 +24,7 @@ public class HitBall : MonoBehaviour
     {
         if (playerInRange && callbackContext.performed)
         {
+            
             bazookaScript.BazookaFunction(gameObject);
             foreach (Ball ball in balls) 
             {

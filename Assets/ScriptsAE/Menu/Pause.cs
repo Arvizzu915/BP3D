@@ -4,19 +4,17 @@ using UnityEngine;
 
 public class Pause : MonoBehaviour
 {
-    [SerializeField] GameObject pausePanel,instructions;
+    [SerializeField] GameObject pausePanel;
     // Start is called before the first frame update
     public void PauseGame()
     {
         if (Time.timeScale == 1.0f)
         {
             Time.timeScale = 0.0f;
-            Cursor.lockState = CursorLockMode.None;
         }
         else
         {
             Time.timeScale = 1.0f;
-            Cursor.lockState = CursorLockMode.Locked;
         }
     }
 
@@ -27,13 +25,11 @@ public class Pause : MonoBehaviour
             if(pausePanel.activeInHierarchy )
             {
                 pausePanel.SetActive(false);
-                instructions.SetActive(true);
                
             }
             else
             {
                 pausePanel.SetActive(true);
-                instructions.SetActive(false);
                 
             }
             PauseGame();

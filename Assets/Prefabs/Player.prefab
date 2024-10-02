@@ -45,7 +45,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636942008053014186}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: a61ff9633596c744b810507ea2aa23b5, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -164,6 +164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 5
   jumpForce: 12
+  rotationSpeed: 720
   rb: {fileID: 5480359133475424230}
   katana: 0
   bazooka: 0

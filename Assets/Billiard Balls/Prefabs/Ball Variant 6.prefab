@@ -38,15 +38,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1244052165767959752, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.59
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 1244052165767959752, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.3
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 1244052165767959752, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.06
+      value: -5.98
       objectReference: {fileID: 0}
     - target: {fileID: 1244052165767959752, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -82,12 +82,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3288390748713395978, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
       propertyPath: m_Size.y
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 3288390748713395978, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
       propertyPath: m_Size.z
-      value: 0.8
+      value: 0.8000001
       objectReference: {fileID: 0}
+    - target: {fileID: 3288390748713395978, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: a61ff9633596c744b810507ea2aa23b5, type: 2}
     - target: {fileID: 8468718578124042216, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
       propertyPath: m_Name
       value: Ball Variant 6
