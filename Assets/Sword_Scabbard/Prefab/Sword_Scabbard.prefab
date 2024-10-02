@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 425942}
   - component: {fileID: 743682937948840613}
   - component: {fileID: 5085329848076873309}
+  - component: {fileID: 9193795514624585806}
   m_Layer: 0
   m_Name: Sword_Scabbard
   m_TagString: Untagged
@@ -214,6 +215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUpType: 1
+  powerupSound: {fileID: 0}
 --- !u!65 &5085329848076873309
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -235,3 +237,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 50, y: 20, z: 122.67526}
   m_Center: {x: 0, y: 0, z: -11.337662}
+--- !u!114 &9193795514624585806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe1bf8fb5aa78d459a4d2a64aa3b678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUpType: 1
+  powerupSound: {fileID: 8300000, guid: 7190a66e29d270d4ebe3d1362d342d0c, type: 3}

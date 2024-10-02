@@ -16,10 +16,6 @@ PrefabInstance:
       propertyPath: Boxcollider
       value: 
       objectReference: {fileID: 7060512095399559060}
-    - target: {fileID: 418879244764917661, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
-      propertyPath: m_Constraints
-      value: 80
-      objectReference: {fileID: 0}
     - target: {fileID: 881894397021443700, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

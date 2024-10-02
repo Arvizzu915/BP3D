@@ -165,6 +165,7 @@ MonoBehaviour:
   playerSpeed: 5
   jumpForce: 12
   rotationSpeed: 720
+  animator: {fileID: 7146868816960352292}
   rb: {fileID: 5480359133475424230}
   katana: 0
   bazooka: 0
@@ -184,6 +185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1492003442647051710}
   ballForce: 200000
+  bazookaBoom: {fileID: 8300000, guid: 8fdc0804157b34641a7e6f672a6aa069, type: 3}
 --- !u!1 &2727642373116150013
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,6 +253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1492003442647051710}
+  slash: {fileID: 8300000, guid: ae762ba72146df7448071d5c6e38d094, type: 3}
 --- !u!1001 &5191522510219313103
 PrefabInstance:
   m_ObjectHideFlags: 0

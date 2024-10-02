@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   portalExit: {fileID: 0}
+  portalSound: {fileID: 8300000, guid: 568a25d8681aedc418cfdd33018d1142, type: 3}
 --- !u!1 &2780661982274698779
 GameObject:
   m_ObjectHideFlags: 0
