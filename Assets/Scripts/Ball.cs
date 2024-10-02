@@ -23,6 +23,10 @@ public class Ball : MonoBehaviour
         {
             rb.velocity = new Vector3 (direction.x * speed, rb.velocity.y, direction.z *speed);
         }
+        else
+        {
+            rb.velocity = Vector3.zero;
+        }
     }
 
     public void RoundPosition()
