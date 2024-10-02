@@ -974,7 +974,7 @@ PrefabInstance:
     - target: {fileID: 72888421914146281, guid: 16be26c8a095f1b43bf1125be683129d, type: 3}
       propertyPath: winLevel
       value: 
-      objectReference: {fileID: 963194229}
+      objectReference: {fileID: 963194230}
     - target: {fileID: 72888421914146281, guid: 16be26c8a095f1b43bf1125be683129d, type: 3}
       propertyPath: playerScript
       value: 
@@ -983,18 +983,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball
       objectReference: {fileID: 0}
-    - target: {fileID: 5679652150856754274, guid: 16be26c8a095f1b43bf1125be683129d, type: 3}
-      propertyPath: m_ExcludeLayers.m_Bits
-      value: 2039
+    - target: {fileID: 7809337063012960425, guid: 16be26c8a095f1b43bf1125be683129d, type: 3}
+      propertyPath: speed
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7809337063012960425, guid: 16be26c8a095f1b43bf1125be683129d, type: 3}
       propertyPath: playerScript
       value: 
       objectReference: {fileID: 495048145}
-    - target: {fileID: 8345993204905223860, guid: 16be26c8a095f1b43bf1125be683129d, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 9213781701819881180, guid: 16be26c8a095f1b43bf1125be683129d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10
@@ -1611,24 +1607,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1397892114}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &963194225 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1050831588249904473, guid: 74d2a592d0b417f498e1b7f908fddd89, type: 3}
+--- !u!114 &963194230 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5877067641349227547, guid: 74d2a592d0b417f498e1b7f908fddd89, type: 3}
   m_PrefabInstance: {fileID: 5455382410864161437}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &963194229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d1853746816b1647878cd4731153c2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballsToWin: 2
+--- !u!1 &985989917 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7785309252483393866, guid: 0f6d55f07297e2f49b607e57aa52264f, type: 3}
+  m_PrefabInstance: {fileID: 2102285297}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &986838476
 GameObject:
   m_ObjectHideFlags: 0
@@ -1987,7 +1981,7 @@ PrefabInstance:
     - target: {fileID: 6018874495383835235, guid: 777d714a93c3cb8438d6cc45788e516c, type: 3}
       propertyPath: winLevel
       value: 
-      objectReference: {fileID: 963194229}
+      objectReference: {fileID: 0}
     - target: {fileID: 6018874495383835235, guid: 777d714a93c3cb8438d6cc45788e516c, type: 3}
       propertyPath: playerScript
       value: 
@@ -3254,7 +3248,7 @@ PrefabInstance:
     - target: {fileID: 1447250979521388805, guid: 8eba3836bee05e64697e341aaa11be09, type: 3}
       propertyPath: winLevel
       value: 
-      objectReference: {fileID: 963194229}
+      objectReference: {fileID: 963194230}
     - target: {fileID: 1447250979521388805, guid: 8eba3836bee05e64697e341aaa11be09, type: 3}
       propertyPath: playerScript
       value: 
@@ -4087,6 +4081,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 106520340}
     - target: {fileID: 1492003442647051710, guid: dc6415394ac4cb5438127005375afba0, type: 3}
+      propertyPath: playerSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1492003442647051710, guid: dc6415394ac4cb5438127005375afba0, type: 3}
       propertyPath: rotationSpeed
       value: 720
       objectReference: {fileID: 0}
@@ -4451,6 +4449,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 5877067641349227547, guid: 74d2a592d0b417f498e1b7f908fddd89, type: 3}
+      propertyPath: winpanel
+      value: 
+      objectReference: {fileID: 985989917}
     - target: {fileID: 8105213147914791138, guid: 74d2a592d0b417f498e1b7f908fddd89, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4494,10 +4496,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1050831588249904473, guid: 74d2a592d0b417f498e1b7f908fddd89, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 963194229}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74d2a592d0b417f498e1b7f908fddd89, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

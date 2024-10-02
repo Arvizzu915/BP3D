@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 726983609392590923}
   - component: {fileID: 2248649291870481377}
   - component: {fileID: 3210696524161099447}
+  - component: {fileID: 5877067641349227547}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050831588249904473}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5623046, y: -0, z: -0, w: 0.82693017}
+  m_LocalRotation: {x: 0.5623071, y: 0, z: 0, w: 0.82692856}
   m_LocalPosition: {x: 0, y: 13.57, z: -6.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -189,3 +190,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5877067641349227547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050831588249904473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d1853746816b1647878cd4731153c2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballsToWin: 2
+  winpanel: {fileID: 0}
+  winAudio: {fileID: 8300000, guid: 3efb8e70b5a742b4cacadf9bee45a847, type: 3}
+  audioSource: {fileID: 3210696524161099447}

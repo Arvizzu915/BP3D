@@ -11,6 +11,7 @@ public class HitBall : MonoBehaviour
     [SerializeField] List<Ball> balls = new List<Ball>();
     [SerializeField] public Ball ballScript;
     [SerializeField] AudioClip ballAudioClip;
+    [SerializeField] float cooldown;
 
     public bool playerInRange = false;
 
@@ -23,9 +24,9 @@ public class HitBall : MonoBehaviour
 
     public void Hit(InputAction.CallbackContext callbackContext)
     {
-        if (playerInRange && callbackContext.performed)
+        if (playerInRange && callbackContext.performed && Time.time - cooldown > 1.5f)
         {
-            
+            cooldown = Time.time;
             bazookaScript.BazookaFunction(gameObject);
             SoundFxManager.instance.PlaySoundFXClip(ballAudioClip,transform,1f);
             foreach (Ball ball in balls) 
