@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4844917212276745502}
   - component: {fileID: 7732125351042575753}
   - component: {fileID: 7809337063012960425}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ball
   m_TagString: Ball
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 927631485017958516}
   - component: {fileID: 8013155588840489429}
   - component: {fileID: 72888421914146281}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: triggerdetect
   m_TagString: BallTriggerDetect
   m_Icon: {fileID: 0}
@@ -166,6 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca3c4d608dcb990439df175da429a8b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ballCollider: {fileID: 4844917212276745502}
   ballScript: {fileID: 7809337063012960425}
 --- !u!1 &9206260824051604517
 GameObject:
@@ -179,7 +180,7 @@ GameObject:
   - component: {fileID: 6015343389185340751}
   - component: {fileID: 7107578746924602464}
   - component: {fileID: 351597657600484500}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

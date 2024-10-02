@@ -4,23 +4,33 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
+    public int ballIndex = 0;
     [SerializeField] float speed;
     [SerializeField] Rigidbody rb;
     public Vector3 direction;
     public bool moving = false;
+
+    private void Update()
+    {
+        
+    }
 
     private void FixedUpdate()
     {
         if (moving)
         {
             rb.isKinematic = false;
-            rb.velocity = direction * speed;
+            rb.velocity = new Vector3 (direction.x * speed, rb.velocity.y, direction.z *speed);
         }
     }
 
-    public void RoundPosition(float offset)
+    public void RoundPosition()
     {
-        transform.position = new Vector3(Mathf.Round(transform.position.x + offset), 1.5f, Mathf.Round(transform.position.z + offset));
+        transform.position = new Vector3(Mathf.Round(transform.position.x), 1.3f, Mathf.Round(transform.position.z));
+        if ((transform.position.x % 2 != 0) || (transform.position.z % 2 != 0)) 
+        {
+            transform.position = transform.position + -direction;
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -28,22 +38,26 @@ public class Ball : MonoBehaviour
         if (collision.gameObject.CompareTag("Bumper"))
         {
             rb.velocity = Vector3.zero;
-            transform.position = transform.position + (-direction * .05f);
             rb.isKinematic = true;
             moving = false;
-            RoundPosition(0.3f);
+            RoundPosition();
+            transform.position = new Vector3(transform.position.x + (-direction.x / 7), transform.position.y, transform.position.z + (-direction.z / 7));
         }
 
-        if (collision.gameObject.CompareTag("Ball"))
+        if (moving && collision.gameObject.CompareTag("Ball"))
         {
-            rb.velocity = Vector3.zero;
-            transform.position = transform.position + (-direction * .05f);
-            rb.isKinematic = true;
-            moving = false;
+
             Ball ballScript = collision.gameObject.GetComponent<Ball>();
-            ballScript.moving = true;
-            ballScript.direction = direction;
-            RoundPosition(0);
+            if (ballIndex > ballScript.ballIndex)
+            {
+                ballScript.direction = direction;
+                ballScript.moving = true;
+                moving = false;
+                rb.velocity = Vector3.zero;
+                rb.isKinematic = true;
+                RoundPosition();
+                ballScript.ballIndex = ballIndex++;
+            }
         }
     }
 }
