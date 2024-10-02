@@ -8,6 +8,7 @@ public class BallTriggers : MonoBehaviour
     [SerializeField] Ball ballScript;
     [SerializeField] WinLevel winLevel;
     [SerializeField] Player playerScript;
+    [SerializeField] AudioClip audioC;
 
     [SerializeField] private bool ball;
 
@@ -30,6 +31,7 @@ public class BallTriggers : MonoBehaviour
             if(ball && winLevel.ballsToWin >= -1) 
             {
                 winLevel.ballsToWin--;
+                SoundFxManager.instance.PlaySoundFXClip(audioC, transform, 1f);
             }
             else
             {

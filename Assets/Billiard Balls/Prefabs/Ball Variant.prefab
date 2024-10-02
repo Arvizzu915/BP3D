@@ -37,10 +37,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 919747b3b1366654bbf6cb13a1830e18, type: 2}
     - target: {fileID: 7732125351042575753, guid: 16be26c8a095f1b43bf1125be683129d, type: 3}
-      propertyPath: m_Constraints
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 7732125351042575753, guid: 16be26c8a095f1b43bf1125be683129d, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
       value: 1024
       objectReference: {fileID: 0}

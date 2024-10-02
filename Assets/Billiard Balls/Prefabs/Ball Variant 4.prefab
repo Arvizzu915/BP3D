@@ -16,10 +16,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b5d5a5f6e7fcfa84dabcdd8712661103, type: 2}
-    - target: {fileID: 7711340636180308640, guid: a82d1b09209d7f64ba5c51a34faf1bd9, type: 3}
-      propertyPath: m_Constraints
-      value: 80
-      objectReference: {fileID: 0}
     - target: {fileID: 7794181568847579008, guid: a82d1b09209d7f64ba5c51a34faf1bd9, type: 3}
       propertyPath: Boxcollider
       value: 

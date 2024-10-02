@@ -10,6 +10,7 @@ public class HitBall : MonoBehaviour
     [SerializeField] Bazooka bazookaScript;
     [SerializeField] List<Ball> balls = new List<Ball>();
     [SerializeField] public Ball ballScript;
+    [SerializeField] AudioClip ballAudioClip;
 
     public bool playerInRange = false;
 
@@ -26,6 +27,7 @@ public class HitBall : MonoBehaviour
         {
             
             bazookaScript.BazookaFunction(gameObject);
+            SoundFxManager.instance.PlaySoundFXClip(ballAudioClip,transform,1f);
             foreach (Ball ball in balls) 
             {
                 ball.ballIndex = 0;

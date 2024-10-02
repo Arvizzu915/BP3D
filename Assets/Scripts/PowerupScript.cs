@@ -5,6 +5,7 @@ using UnityEngine;
 public class PowerupScript : MonoBehaviour
 {
     [SerializeField] int powerUpType = 1;
+    [SerializeField] AudioClip powerupSound;
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == ("Player")) {
@@ -13,10 +14,13 @@ public class PowerupScript : MonoBehaviour
         {
             hasPowerup.katana = true;
             gameObject.SetActive(false);
+                SoundFxManager.instance.PlaySoundFXClip(powerupSound, transform, 1f);
         } 
         else
             { hasPowerup.bazooka = true;
-              gameObject.SetActive (false);}
+              gameObject.SetActive (false);
+                SoundFxManager.instance.PlaySoundFXClip(powerupSound, transform, 1f);
+            }
         }
         
         

@@ -9,6 +9,7 @@ public class Ball : MonoBehaviour
     [SerializeField] Rigidbody rb;
     [SerializeField] BoxCollider Boxcollider;
     [SerializeField] Player playerScript;
+    [SerializeField] AudioClip ballAudio;
     public Vector3 direction;
     public bool moving = false;
 
@@ -50,7 +51,7 @@ public class Ball : MonoBehaviour
 
         if (moving && collision.gameObject.CompareTag("Ball"))
         {
-
+            SoundFxManager.instance.PlaySoundFXClip(ballAudio, transform, 1f);
             Ball ballScript = collision.gameObject.GetComponent<Ball>();
             if (ballIndex > ballScript.ballIndex)
             {
