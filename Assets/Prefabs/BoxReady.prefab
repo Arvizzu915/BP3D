@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2240881192534159605}
   - component: {fileID: 5264815157436493219}
+  - component: {fileID: 6744426216338381751}
   m_Layer: 0
   m_Name: BoxReady
   m_TagString: Bumper
@@ -32,6 +33,7 @@ Transform:
   m_Children:
   - {fileID: 1686881325863600557}
   - {fileID: 4676635425794815918}
+  - {fileID: 3678528978559911080}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &5264815157436493219
@@ -55,6 +57,80 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.5, y: 0.7, z: 1.5}
   m_Center: {x: 0, y: 0.3, z: 0}
+--- !u!65 &6744426216338381751
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464484887366625871}
+  m_Material: {fileID: 13400000, guid: a61ff9633596c744b810507ea2aa23b5, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 4086
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4, y: 2, z: 1.4}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!1 &1690528669130230780
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3678528978559911080}
+  - component: {fileID: 9183008490974494056}
+  m_Layer: 10
+  m_Name: colliderplayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3678528978559911080
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690528669130230780}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2240881192534159605}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &9183008490974494056
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690528669130230780}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 4, z: 2}
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!1 &6381596682139151494
 GameObject:
   m_ObjectHideFlags: 0
@@ -67,7 +143,7 @@ GameObject:
   - component: {fileID: 8452012563258623382}
   m_Layer: 10
   m_Name: colliderplayer
-  m_TagString: Untagged
+  m_TagString: Bumper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,7 +170,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6381596682139151494}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: a61ff9633596c744b810507ea2aa23b5, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
