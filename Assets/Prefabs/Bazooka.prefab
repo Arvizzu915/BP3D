@@ -114,3 +114,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUpType: 2
+  powerupSound: {fileID: 8300000, guid: 8fdc0804157b34641a7e6f672a6aa069, type: 3}
