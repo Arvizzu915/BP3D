@@ -32,6 +32,15 @@ public class Player : MonoBehaviour
             animator.SetBool("Moving", false);
         }
         
+
+        if (grounded) 
+        {
+            animator.SetBool("Jumping", false);
+        }
+        else
+        {
+            animator.SetBool("Jumping", true);
+        }
     }
 
     private void FixedUpdate()
@@ -41,6 +50,7 @@ public class Player : MonoBehaviour
 
     public void ResetLevel()
     {
+        Time.timeScale = 1.0f;
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
     }
 
