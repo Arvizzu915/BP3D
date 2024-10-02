@@ -12,7 +12,7 @@ public class KatanaScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F) && selectingBox && player.katana && player.selectedWeapon == 1)
         {
-            Debug.Log("katana");
+            
             Katana(box);
         }
     }
@@ -29,7 +29,7 @@ public class KatanaScript : MonoBehaviour
         
         if (other.gameObject.CompareTag("Bumper"))
         {
-            Debug.Log("detect");
+            
             box = other.gameObject;
             selectingBox = true;
         }

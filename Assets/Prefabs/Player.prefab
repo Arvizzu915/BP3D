@@ -169,7 +169,7 @@ MonoBehaviour:
   rb: {fileID: 5480359133475424230}
   katana: 0
   bazooka: 0
-  selectedWeapon: 2
+  selectedWeapon: 0
   kHb: {fileID: 2727642373116150013}
 --- !u!114 &5368812311832412168
 MonoBehaviour:
