@@ -290,7 +290,7 @@ PrefabInstance:
     - target: {fileID: 7221758143127867610, guid: f79062b27f6c2804d974ef609b666551, type: 3}
       propertyPath: winLevel
       value: 
-      objectReference: {fileID: 963194229}
+      objectReference: {fileID: 0}
     - target: {fileID: 7221758143127867610, guid: f79062b27f6c2804d974ef609b666551, type: 3}
       propertyPath: playerScript
       value: 
@@ -854,6 +854,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b24c7b227c38e9d418f5e5340c7e2625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &423803169 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7785309252483393866, guid: 0f6d55f07297e2f49b607e57aa52264f, type: 3}
+  m_PrefabInstance: {fileID: 2102285297}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &437341768
 GameObject:
   m_ObjectHideFlags: 0
@@ -1108,7 +1113,7 @@ PrefabInstance:
     - target: {fileID: 72888421914146281, guid: 16be26c8a095f1b43bf1125be683129d, type: 3}
       propertyPath: winLevel
       value: 
-      objectReference: {fileID: 963194229}
+      objectReference: {fileID: 0}
     - target: {fileID: 72888421914146281, guid: 16be26c8a095f1b43bf1125be683129d, type: 3}
       propertyPath: playerScript
       value: 
@@ -1922,7 +1927,7 @@ PrefabInstance:
     - target: {fileID: 8629260840504041408, guid: 8b4dc1e5d52589b48b5af29b97da7784, type: 3}
       propertyPath: winLevel
       value: 
-      objectReference: {fileID: 963194229}
+      objectReference: {fileID: 0}
     - target: {fileID: 8629260840504041408, guid: 8b4dc1e5d52589b48b5af29b97da7784, type: 3}
       propertyPath: playerScript
       value: 
@@ -2002,24 +2007,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b24c7b227c38e9d418f5e5340c7e2625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &963194225 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1050831588249904473, guid: 74d2a592d0b417f498e1b7f908fddd89, type: 3}
-  m_PrefabInstance: {fileID: 5455382410864161437}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &963194229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d1853746816b1647878cd4731153c2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ballsToWin: 4
 --- !u!1 &986838476
 GameObject:
   m_ObjectHideFlags: 0
@@ -2382,7 +2369,7 @@ PrefabInstance:
     - target: {fileID: 6018874495383835235, guid: 777d714a93c3cb8438d6cc45788e516c, type: 3}
       propertyPath: winLevel
       value: 
-      objectReference: {fileID: 963194229}
+      objectReference: {fileID: 0}
     - target: {fileID: 6018874495383835235, guid: 777d714a93c3cb8438d6cc45788e516c, type: 3}
       propertyPath: playerScript
       value: 
@@ -3869,7 +3856,7 @@ PrefabInstance:
     - target: {fileID: 1447250979521388805, guid: 8eba3836bee05e64697e341aaa11be09, type: 3}
       propertyPath: winLevel
       value: 
-      objectReference: {fileID: 963194229}
+      objectReference: {fileID: 0}
     - target: {fileID: 1447250979521388805, guid: 8eba3836bee05e64697e341aaa11be09, type: 3}
       propertyPath: playerScript
       value: 
@@ -5454,6 +5441,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 5877067641349227547, guid: 74d2a592d0b417f498e1b7f908fddd89, type: 3}
+      propertyPath: winpanel
+      value: 
+      objectReference: {fileID: 423803169}
     - target: {fileID: 8105213147914791138, guid: 74d2a592d0b417f498e1b7f908fddd89, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5497,10 +5488,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1050831588249904473, guid: 74d2a592d0b417f498e1b7f908fddd89, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 963194229}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74d2a592d0b417f498e1b7f908fddd89, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

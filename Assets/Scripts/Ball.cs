@@ -21,7 +21,7 @@ public class Ball : MonoBehaviour
     {
         if (moving)
         {
-            rb.velocity = new Vector3 (direction.x * speed, rb.velocity.y, direction.z *speed);
+            rb.velocity = new Vector3 (direction.x * speed, rb.velocity.y, direction.z * speed);
         }
         else
         {

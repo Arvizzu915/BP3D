@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballIndex: 0
-  speed: 8
+  speed: 10
   rb: {fileID: 7732125351042575753}
   Boxcollider: {fileID: 4844917212276745502}
   playerScript: {fileID: 0}
