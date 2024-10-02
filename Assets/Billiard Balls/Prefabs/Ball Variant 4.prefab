@@ -20,6 +20,10 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 7794181568847579008, guid: a82d1b09209d7f64ba5c51a34faf1bd9, type: 3}
+      propertyPath: Boxcollider
+      value: 
+      objectReference: {fileID: 8940996953132524340}
     - target: {fileID: 9194034719775742453, guid: a82d1b09209d7f64ba5c51a34faf1bd9, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -77,3 +81,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a82d1b09209d7f64ba5c51a34faf1bd9, type: 3}
+--- !u!65 &8940996953132524340 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 4861269597859277367, guid: a82d1b09209d7f64ba5c51a34faf1bd9, type: 3}
+  m_PrefabInstance: {fileID: 4567353344265193731}
+  m_PrefabAsset: {fileID: 0}

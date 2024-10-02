@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6209270039262360050, guid: 8eba3836bee05e64697e341aaa11be09, type: 3}
       propertyPath: m_Size.y
-      value: 0.8
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6209270039262360050, guid: 8eba3836bee05e64697e341aaa11be09, type: 3}
       propertyPath: m_Size.z
@@ -80,6 +80,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 96f49344a94aa8245b7780b299f17b2f, type: 2}
+    - target: {fileID: 8752479887454182469, guid: 8eba3836bee05e64697e341aaa11be09, type: 3}
+      propertyPath: collider
+      value: 
+      objectReference: {fileID: 2740088452449812525}
+    - target: {fileID: 8752479887454182469, guid: 8eba3836bee05e64697e341aaa11be09, type: 3}
+      propertyPath: Boxcollider
+      value: 
+      objectReference: {fileID: 2740088452449812525}
     - target: {fileID: 9104413337347979621, guid: 8eba3836bee05e64697e341aaa11be09, type: 3}
       propertyPath: m_Constraints
       value: 80
@@ -89,3 +97,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8eba3836bee05e64697e341aaa11be09, type: 3}
+--- !u!65 &2740088452449812525 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 6209270039262360050, guid: 8eba3836bee05e64697e341aaa11be09, type: 3}
+  m_PrefabInstance: {fileID: 8083255297862185439}
+  m_PrefabAsset: {fileID: 0}

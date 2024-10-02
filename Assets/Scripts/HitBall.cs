@@ -6,6 +6,8 @@ using UnityEngine.InputSystem;
 
 public class HitBall : MonoBehaviour
 {
+    [SerializeField] Player player;
+    [SerializeField] Bazooka bazookaScript;
     [SerializeField] List<Ball> balls = new List<Ball>();
     [SerializeField] public Ball ballScript;
 
@@ -22,6 +24,7 @@ public class HitBall : MonoBehaviour
     {
         if (playerInRange && callbackContext.performed)
         {
+            bazookaScript.BazookaFunction(gameObject);
             foreach (Ball ball in balls) 
             {
                 ball.ballIndex = 0;

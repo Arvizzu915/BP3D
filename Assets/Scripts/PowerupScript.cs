@@ -25,6 +25,8 @@ public class PowerupScript : MonoBehaviour
     {
         if(powerUpType==1) {transform.Rotate(0, 10 * Time.deltaTime, 0); }
         else
-        { transform.Rotate(10 * Time.deltaTime, 0, 0); }
+        { 
+            transform.Rotate(22 * Time.deltaTime, 0, 0); 
+        }
     }
 }

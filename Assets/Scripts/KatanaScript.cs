@@ -5,20 +5,37 @@ using UnityEngine;
 public class KatanaScript : MonoBehaviour
 {
     [SerializeField] Player player;
-    private void Katana(GameObject block) { 
+    private bool selectingBox = false;
+    private GameObject box;
+    private void Update()
     {
-            
-        if (block.tag=="Block"&&player.katana)
+        if (Input.GetKeyDown(KeyCode.F) && selectingBox && player.katana && player.selectedWeapon == 1)
         {
+            Katana(box);
+        }
+    }
+
+    private void Katana(GameObject block)
+    {
             block.SetActive(false);
             player.katana = false;
-        }
-    } }
+
+    }
     private void OnTriggerEnter(Collider other)
     {
-        if (Input.GetKeyDown(KeyCode.F)&& player.selectedWeapon==1) {
+        if (other.gameObject.CompareTag("Bumper"))
+        {
+            box = other.gameObject;
+            selectingBox = true;
+        }
+    }
 
-            Katana(other.gameObject);
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Bumper"))
+        {
+            box = null;
+            selectingBox = false;
         }
     }
 }

@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 215743768643390141, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
+      propertyPath: collider
+      value: 
+      objectReference: {fileID: 7060512095399559060}
+    - target: {fileID: 215743768643390141, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
+      propertyPath: Boxcollider
+      value: 
+      objectReference: {fileID: 7060512095399559060}
     - target: {fileID: 418879244764917661, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
       propertyPath: m_Constraints
       value: 80
@@ -74,7 +82,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3288390748713395978, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
       propertyPath: m_Size.y
-      value: 0.8
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3288390748713395978, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
       propertyPath: m_Size.z
@@ -89,3 +97,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
+--- !u!65 &7060512095399559060 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 3288390748713395978, guid: b54b4fbf33d4ee74699d3b9580bf27a4, type: 3}
+  m_PrefabInstance: {fileID: 5501515973407905950}
+  m_PrefabAsset: {fileID: 0}
