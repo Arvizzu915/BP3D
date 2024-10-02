@@ -21,4 +21,8 @@ public class Level : MonoBehaviour
     {
         SceneManager.LoadScene(level);
     }
+    public void LoadNextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+    }
 }
