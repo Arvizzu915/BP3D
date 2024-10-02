@@ -6,7 +6,8 @@ using UnityEngine.InputSystem;
 
 public class HitBall : MonoBehaviour
 {
-    [SerializeField] Ball ballScript;
+    [SerializeField] List<Ball> balls = new List<Ball>();
+    [SerializeField] public Ball ballScript;
 
     public bool playerInRange = false;
 
@@ -21,6 +22,11 @@ public class HitBall : MonoBehaviour
     {
         if (playerInRange && callbackContext.performed)
         {
+            foreach (Ball ball in balls) 
+            {
+                ball.ballIndex = 0;
+            }
+            ballScript.ballIndex = 1;
             ballScript.moving = true;
         }
     }
