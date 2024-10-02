@@ -5456,6 +5456,10 @@ PrefabInstance:
       propertyPath: winpanel
       value: 
       objectReference: {fileID: 423803169}
+    - target: {fileID: 5877067641349227547, guid: 74d2a592d0b417f498e1b7f908fddd89, type: 3}
+      propertyPath: ballsToWin
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8105213147914791138, guid: 74d2a592d0b417f498e1b7f908fddd89, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
