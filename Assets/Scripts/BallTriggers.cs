@@ -27,7 +27,7 @@ public class BallTriggers : MonoBehaviour
 
         if (other.gameObject.CompareTag("Void"))
         {
-            if(ball) 
+            if(ball && winLevel.ballsToWin >= -1) 
             {
                 winLevel.ballsToWin--;
             }

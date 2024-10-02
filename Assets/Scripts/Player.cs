@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     [SerializeField] private float playerSpeed, jumpForce, rotationSpeed;
+    [SerializeField] Animator animator;
     [SerializeField] Rigidbody rb;
     public bool katana;
     public bool bazooka;
@@ -20,11 +21,26 @@ public class Player : MonoBehaviour
     {
         if (moveDirection !=  Vector3.zero)
         {
+            animator.SetBool("Moving", true);
+
             Quaternion toRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
 
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
         }
+        else
+        {
+            animator.SetBool("Moving", false);
+        }
         
+
+        if (grounded) 
+        {
+            animator.SetBool("Jumping", false);
+        }
+        else
+        {
+            animator.SetBool("Jumping", true);
+        }
     }
 
     private void FixedUpdate()
@@ -34,6 +50,7 @@ public class Player : MonoBehaviour
 
     public void ResetLevel()
     {
+        Time.timeScale = 1.0f;
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
     }
 

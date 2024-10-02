@@ -18,12 +18,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6209270039262360050, guid: 8eba3836bee05e64697e341aaa11be09, type: 3}
       propertyPath: m_Size.y
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6209270039262360050, guid: 8eba3836bee05e64697e341aaa11be09, type: 3}
       propertyPath: m_Size.z
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 6209270039262360050, guid: 8eba3836bee05e64697e341aaa11be09, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: a61ff9633596c744b810507ea2aa23b5, type: 2}
     - target: {fileID: 6209270039262360050, guid: 8eba3836bee05e64697e341aaa11be09, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
       value: 1024

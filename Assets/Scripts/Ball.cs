@@ -8,6 +8,7 @@ public class Ball : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] Rigidbody rb;
     [SerializeField] BoxCollider Boxcollider;
+    [SerializeField] Player playerScript;
     public Vector3 direction;
     public bool moving = false;
 
@@ -34,6 +35,11 @@ public class Ball : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if(collision.gameObject.CompareTag("Player") && moving)
+        {
+            playerScript.ResetLevel();
+        }
+
         if (collision.gameObject.CompareTag("Bumper"))
         {
             rb.velocity = Vector3.zero;
