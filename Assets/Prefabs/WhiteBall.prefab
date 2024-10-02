@@ -259,6 +259,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   ballScript: {fileID: 4649392964711815269}
+  ballAudioClip: {fileID: 8300000, guid: 2d0544f391309994188a72dd43498951, type: 3}
   playerInRange: 0
 --- !u!114 &4649392964711815269
 MonoBehaviour:
@@ -276,6 +277,8 @@ MonoBehaviour:
   speed: 8
   rb: {fileID: 460960709001146485}
   Boxcollider: {fileID: 4458917094766406460}
+  playerScript: {fileID: 0}
+  ballAudio: {fileID: 8300000, guid: 2d0544f391309994188a72dd43498951, type: 3}
   direction: {x: -1, y: 0, z: 0}
   moving: 0
 --- !u!1 &3290850662208044593
@@ -616,4 +619,5 @@ MonoBehaviour:
   ballScript: {fileID: 4649392964711815269}
   winLevel: {fileID: 0}
   playerScript: {fileID: 0}
+  audioC: {fileID: 0}
   ball: 0
