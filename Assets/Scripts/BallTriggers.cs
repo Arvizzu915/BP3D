@@ -6,6 +6,10 @@ public class BallTriggers : MonoBehaviour
 {
     [SerializeField] BoxCollider ballCollider;
     [SerializeField] Ball ballScript;
+    [SerializeField] WinLevel winLevel;
+    [SerializeField] Player playerScript;
+
+    [SerializeField] private bool ball;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -23,6 +27,14 @@ public class BallTriggers : MonoBehaviour
 
         if (other.gameObject.CompareTag("Void"))
         {
+            if(ball) 
+            {
+                winLevel.ballsToWin--;
+            }
+            else
+            {
+                playerScript.ResetLevel();
+            }
             gameObject.SetActive(false);
         }
     }

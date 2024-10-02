@@ -22,8 +22,8 @@ TagManager:
   - Hole
   - Ball
   - Bumper
-  - 
-  - 
+  - Portal
+  - playercollider
   - 
   - 
   - 

@@ -104,11 +104,32 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball Variant 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7916054304451266517, guid: 8b4dc1e5d52589b48b5af29b97da7784, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1866223631145116442}
   m_SourcePrefab: {fileID: 100100000, guid: 8b4dc1e5d52589b48b5af29b97da7784, type: 3}
+--- !u!1 &1968892906112901845 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7916054304451266517, guid: 8b4dc1e5d52589b48b5af29b97da7784, type: 3}
+  m_PrefabInstance: {fileID: 8541517427721135360}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-1866223631145116442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968892906112901845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c7271dcecf0e22449cd55d7a8082085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &4861269597859277367 stripped
 BoxCollider:
   m_CorrespondingSourceObject: {fileID: 3890866162760585015, guid: 8b4dc1e5d52589b48b5af29b97da7784, type: 3}
