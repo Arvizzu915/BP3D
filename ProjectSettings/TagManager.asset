@@ -9,6 +9,8 @@ TagManager:
   - Bumper
   - DirPad
   - BallTriggerDetect
+  - Portal
+  - ground
   layers:
   - Default
   - TransparentFX
