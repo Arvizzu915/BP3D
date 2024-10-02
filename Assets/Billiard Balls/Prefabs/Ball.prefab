@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952523550842023420}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.25, z: 5.43}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
@@ -35,7 +35,7 @@ Transform:
   - {fileID: 927631485017958516}
   - {fileID: 2417067731623086483}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &4844917212276745502
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55,8 +55,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.8, y: 0.8, z: 0.8}
-  m_Center: {x: 0.0017635822, y: -0.0014371076, z: -0.000926435}
+  m_Size: {x: 0.8, y: 0.5, z: 0.8000001}
+  m_Center: {x: 0.0017635822, y: -0.18920186, z: 0.1436848}
 --- !u!54 &7732125351042575753
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -96,10 +96,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b24c7b227c38e9d418f5e5340c7e2625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ballIndex: 0
   speed: 8
   rb: {fileID: 7732125351042575753}
+  Boxcollider: {fileID: 4844917212276745502}
   direction: {x: 0, y: 0, z: 0}
   moving: 0
+  grounded: 0
 --- !u!1 &5764804325056641471
 GameObject:
   m_ObjectHideFlags: 0

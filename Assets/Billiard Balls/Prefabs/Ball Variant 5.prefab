@@ -64,6 +64,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001048142513966723, guid: 73c85bab4d7a92c4f8bda15f356c8bad, type: 3}
+      propertyPath: collider
+      value: 
+      objectReference: {fileID: 3288390748713395978}
+    - target: {fileID: 6001048142513966723, guid: 73c85bab4d7a92c4f8bda15f356c8bad, type: 3}
+      propertyPath: Boxcollider
+      value: 
+      objectReference: {fileID: 3288390748713395978}
     - target: {fileID: 6081637240571784099, guid: 73c85bab4d7a92c4f8bda15f356c8bad, type: 3}
       propertyPath: m_Constraints
       value: 80
@@ -78,7 +86,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8940996953132524340, guid: 73c85bab4d7a92c4f8bda15f356c8bad, type: 3}
       propertyPath: m_Size.y
-      value: 0.8
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8940996953132524340, guid: 73c85bab4d7a92c4f8bda15f356c8bad, type: 3}
       propertyPath: m_Size.z
@@ -89,3 +97,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73c85bab4d7a92c4f8bda15f356c8bad, type: 3}
+--- !u!65 &3288390748713395978 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 8940996953132524340, guid: 73c85bab4d7a92c4f8bda15f356c8bad, type: 3}
+  m_PrefabInstance: {fileID: 5888026247710000190}
+  m_PrefabAsset: {fileID: 0}

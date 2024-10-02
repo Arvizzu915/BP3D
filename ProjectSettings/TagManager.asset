@@ -11,6 +11,7 @@ TagManager:
   - BallTriggerDetect
   - Portal
   - ground
+  - Void
   layers:
   - Default
   - TransparentFX

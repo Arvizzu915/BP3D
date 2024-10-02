@@ -20,5 +20,10 @@ public class BallTriggers : MonoBehaviour
             ballScript.direction = other.gameObject.GetComponent<DirPads>().direction;
             ballScript.RoundPosition();
         }
+
+        if (other.gameObject.CompareTag("Void"))
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

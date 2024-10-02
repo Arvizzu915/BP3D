@@ -8,9 +8,9 @@ public class Portal : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Ball") || other.gameObject.CompareTag("Ball"))
+        if (other.gameObject.CompareTag("Ball"))
         {
-
+            other.transform.position = portalExit.transform.position;
         }
     }
 }

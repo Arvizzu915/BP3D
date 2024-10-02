@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4844917212276745502, guid: 16be26c8a095f1b43bf1125be683129d, type: 3}
       propertyPath: m_Size.y
-      value: 0.8
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4844917212276745502, guid: 16be26c8a095f1b43bf1125be683129d, type: 3}
       propertyPath: m_Size.z
@@ -32,6 +32,14 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 7809337063012960425, guid: 16be26c8a095f1b43bf1125be683129d, type: 3}
+      propertyPath: collider
+      value: 
+      objectReference: {fileID: 6209270039262360050}
+    - target: {fileID: 7809337063012960425, guid: 16be26c8a095f1b43bf1125be683129d, type: 3}
+      propertyPath: Boxcollider
+      value: 
+      objectReference: {fileID: 6209270039262360050}
     - target: {fileID: 9213781701819881180, guid: 16be26c8a095f1b43bf1125be683129d, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -89,3 +97,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16be26c8a095f1b43bf1125be683129d, type: 3}
+--- !u!65 &6209270039262360050 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 4844917212276745502, guid: 16be26c8a095f1b43bf1125be683129d, type: 3}
+  m_PrefabInstance: {fileID: 1519780960103240940}
+  m_PrefabAsset: {fileID: 0}
